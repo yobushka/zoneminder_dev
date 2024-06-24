@@ -12,7 +12,8 @@
 mkdir -p /var/log/zoneminder
 mkdir -p /var/run/mysqld
 chmod 777 -R /var/run/mysqld
-
+mkdir -p /var/log/zm
+chmod 777 /var/log/zm
 systemd-tmpfiles --create
 
 # Find ciritical files and perform sanity checks
