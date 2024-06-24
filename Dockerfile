@@ -71,6 +71,7 @@ RUN apt-get update \
     php-cli \
     php-gd \
     php-mysql \
+    php-intl \
     ssmtp \
     software-properties-common \
     vlc-data \
