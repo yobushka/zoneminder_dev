@@ -14,6 +14,9 @@ mkdir -p /var/run/mysqld
 chmod 777 -R /var/run/mysqld
 mkdir -p /var/log/zm
 chmod 777 /var/log/zm
+mkdir -p /var/cache/zoneminder
+chmod 777 /var/cache/zoneminder
+chown -R www-data:www-data /usr/local/share/zoneminder/www
 systemd-tmpfiles --create
 
 # Find ciritical files and perform sanity checks
